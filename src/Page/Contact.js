@@ -5,6 +5,7 @@ import { faGithub, faKaggle } from '@fortawesome/free-brands-svg-icons'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import contactBg from '../img/contactbg1.mp4';
+import { faN } from '@fortawesome/free-solid-svg-icons'
 
 const Container = styled(motion.div)`
   width: 100vw;
@@ -25,7 +26,9 @@ const BackgroundVideo = styled.video`
   z-index: -1;
   object-fit: cover;
   ${({theme}) => theme.mobile`
-  width: auto;  
+  width: auto;
+  height: 100%;
+  pointer-events: none;
   `}
 `
 const ContentsWrap = styled.div` 
@@ -72,6 +75,7 @@ const ContentsWrap = styled.div`
   }
 `}
   ${({theme}) => theme.mobile`
+  padding-top: 80px;
   height: 100vh;
   flex-direction: column;
   gap: 1rem;
@@ -254,11 +258,15 @@ const Contact = () => {
       </BackgroundVideo>
       <ContentsWrap>
         <IconWrap>
-          <a href='https://github.com/Revella' target='_blank'>
+          <a href='https://github.com/Revella' target='_self'>
             <StyledFontAwesomeIcon icon={faGithub} />
             <span>Github</span>
           </a> 
-          <a href='https://open.kakao.com/o/snTdHlCf' target='_blank'>
+          <a href='https://flaxen-rover-440.notion.site/Study-fd6d7475cded45aa8e3d9de5abf0ee5e?pvs=4' target='_self'>
+            <StyledFontAwesomeIcon icon={faN} />
+            <span>Notion</span>
+          </a>
+          <a href='https://open.kakao.com/o/snTdHlCf' target='_self'>
             <StyledFontAwesomeIcon icon={faKaggle} /> 
             <span>Kakao</span>
           </a>
