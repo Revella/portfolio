@@ -337,9 +337,6 @@ const About = () => {
                   </motion.p>
                 </OverDesc>
               </Description>
-              <Files>
-                <motion.a variants={itemRightAnime} href="https://blog.kakaocdn.net/dn/d4DOZF/btsrjrpFKlj/j5JyuR1sxvkFp9qcBsLFKK/%ED%99%A9%EC%98%81%EC%9E%AC_%EC%9D%B4%EB%A0%A5%EC%84%9C_%EB%B0%8F_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.docx?attach=1&knm=tfile.docx" download="황영재_이력서.docx">이력서 다운로드</motion.a>
-              </Files>
             </InfoWrap>
           </Profile>
         </Wrapper>
